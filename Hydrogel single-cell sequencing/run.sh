@@ -8,6 +8,8 @@ perl To.10x.fastq.pl 3M-february-2018.txt.gz $INPUT.2.fix.fastq.gz $INPUT.R1.BC_
 ln -s $INPUT.For10x.1.fastq.gz ${INPUT}_S1_L001_R1_001.fastq.gz
 ln -s $INPUT.For10x.2.fastq.gz ${INPUT}_S1_L001_R2_001.fastq.gz
 
-# Run with cellranger , download 10x
+# Cteate mix genome in GRCh38_mm10_mix_ref use cellranger mkref
+# ---
+# Run with cellranger 
 INPUT_ID="sample_ID"
-cellranger count --id=$INPUT_ID --transcriptome=./refdata-gex-GRCh38-and-mm10-2020-A/ --fastqs=./ --sample=$INPUT --chemistry=SC3Pv3 --localcores 12
+cellranger count --id=$INPUT_ID --transcriptome=./GRCh38_mm10_mix_ref/ --fastqs=./ --sample=$INPUT --chemistry=SC3Pv3 --localcores 12
