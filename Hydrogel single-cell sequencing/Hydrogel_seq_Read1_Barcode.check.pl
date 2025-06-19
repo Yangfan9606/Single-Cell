@@ -2,7 +2,7 @@
 #------------------------------------------#
 # author:    Yangfan Zhou
 # email:     yangfanzhou9606@gmail.com
-# date:      2025-06-18
+# date:      2025-06-19
 # version:   1.0
 # license:   MIT
 # brief:     Check barcode in FASTQ
