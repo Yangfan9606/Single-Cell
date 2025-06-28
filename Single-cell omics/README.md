@@ -36,9 +36,9 @@ Key operations:
 *Cell type annotation with canonical markers
 
 **Outputs:**
-*`sample.snRNA_processed.rds` - Annotated Seurat object
-*`plots/snRNA_QC_before_filtering.pdf` - Pre-filtering QC metrics
-*`plots/snRNA_elbow_plot.pdf` - PCA elbow plot
-*`plots/snRNA_initial_clusters.pdf` - Initial clustering results
-*`plots/snRNA_marker_expression.pdf` - Marker gene expression
-*`plots/snRNA_annotated_celltypes.pdf` - Final annotated cell types
+- `sample.snRNA_processed.rds` - Annotated Seurat object
+- `plots/snRNA_QC_before_filtering.pdf` - Pre-filtering QC metrics
+- `plots/snRNA_elbow_plot.pdf` - PCA elbow plot
+- `plots/snRNA_initial_clusters.pdf` - Initial clustering results
+- `plots/snRNA_marker_expression.pdf` - Marker gene expression
+- `plots/snRNA_annotated_celltypes.pdf` - Final annotated cell types
