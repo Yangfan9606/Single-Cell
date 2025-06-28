@@ -4,11 +4,11 @@ This repository contains a comprehensive pipeline for integrated analysis of sin
 
 ## Overview
 The pipeline consists of multiple scripts:
-- `run.sh` - **Data preprocessing** with Cell Ranger
-- `1.snRNA.R` - **snRNA-seq data processing** and cell annotation
-- `2.snATAC.R` - **snATAC-seq data processing**
-- `3.Integraged_snRNA_snATAC.R` - **Integrated analysis** of both modalities
-- `4.Integraged_Cicero_CoAccessibility.R` - **Chromatin co-accessibility analysis** with Cicero
+- `run.sh` : **Data preprocessing** with Cell Ranger
+- `1.snRNA.R` : **snRNA-seq data processing** and cell annotation
+- `2.snATAC.R` : **snATAC-seq data processing**
+- `3.Integraged_snRNA_snATAC.R` : **Integrated analysis** of both modalities
+- `4.Integraged_Cicero_CoAccessibility.R` : **Chromatin co-accessibility analysis** with Cicero
 
 ## Prerequisites
 - 10x Genomics Cell Ranger
@@ -24,16 +24,19 @@ Convert raw FASTQ files to expression/accessibility matrices:
 2. Edit `run.sh` with your paths.
 
 **Outputs:**
-- `sample_rna/outs/` - RNA expression data
-- `sample_atac/outs/` - ATAC accessibility data
+- `sample_rna/outs/` : RNA expression data
+- `sample_atac/outs/` : ATAC accessibility data
 
 ### Step 1: snRNA-seq Data Analysis
 Process snRNA-seq data and perform cell annotation:
+
+Edit `1.snRNA.R` with your paths and sample name.
+
 Key operations:
-*Quality control filtering
-*Normalization and dimensionality reduction
-*Cell clustering using Seurat
-*Cell type annotation with canonical markers
+- Quality control filtering
+- Normalization and dimensionality reduction
+- Cell clustering using Seurat
+- Cell type annotation with canonical markers
 
 **Outputs:**
 - `sample.snRNA_processed.rds` - Annotated Seurat object
