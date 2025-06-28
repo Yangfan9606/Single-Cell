@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/648ba512-aa0a-4415-b6ca-adad94f0acc9)# Single-Cell Multi-Omics Analysis Pipeline
+### Single-Cell Multi-Omics Analysis Pipeline
 
 This repository contains a comprehensive pipeline for integrated analysis of single-nucleus RNA-seq (snRNA-seq) and single-nucleus ATAC-seq (snATAC-seq) data, based on methods described in [Morabito et al., Nat Genet 53, 1143–1155 (2021)](https://doi.org/10.1038/s41588-021-00894-z).
 
