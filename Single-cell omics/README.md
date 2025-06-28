@@ -4,8 +4,8 @@ This repository contains a comprehensive pipeline for integrated analysis of sin
 
 ## Overview
 The pipeline consists of multiple scripts:
-0. `run.sh` | **Data preprocessing** with Cell Ranger
-1. **snRNA-seq data processing** and cell annotation
+0. `run.sh` - **Data preprocessing** with Cell Ranger
+1. `1.snRNA.R` - **snRNA-seq data processing** and cell annotation
 2. **snATAC-seq data processing**
 3. **Integrated analysis** of both modalities
 4. **Chromatin co-accessibility analysis** with Cicero
