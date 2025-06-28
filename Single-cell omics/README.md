@@ -1,4 +1,4 @@
-# Single-Cell Multi-Omics Analysis Pipeline
+![image](https://github.com/user-attachments/assets/648ba512-aa0a-4415-b6ca-adad94f0acc9)# Single-Cell Multi-Omics Analysis Pipeline
 
 This repository contains a comprehensive pipeline for integrated analysis of single-nucleus RNA-seq (snRNA-seq) and single-nucleus ATAC-seq (snATAC-seq) data, based on methods described in [Morabito et al., Nat Genet 53, 1143–1155 (2021)](https://doi.org/10.1038/s41588-021-00894-z).
 
@@ -20,7 +20,7 @@ The pipeline consists of multiple scripts:
 ### Step 0: Data Preprocessing (Cell Ranger)
 Convert raw FASTQ files to expression/accessibility matrices:
 
-1. Download reference genomes from [10x Genomics](https://www.10xgenomics.com/support/software/downloads)
+1. Download reference genomes from [10x Genomics](https://www.10xgenomics.com/software)
 2. Edit `run.sh` with your paths.
 
 **Outputs:**
@@ -112,7 +112,7 @@ Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
 |`results/cicero/all_connections.csv`|	All detected peak-peak connections (raw) |
 |`results/cicero/significant_connections.csv`|	Filtered connections (coaccess ≥ 0.15) with genomic coordinates |
 |`results/cicero/gene_specific_connections.rds`|	Gene-targeted connection sets |
-|`results/cicero/connection_summary.csv`|	Statistics per target gene: + Connection count + Max coaccess score + Mean distance |
+|`results/cicero/connection_summary.csv`|	Statistics per target gene: Connection count + Max coaccess score + Mean distance |
 |`results/cicero/cicero_results.rds`|	Complete analysis objects |
 |`plots/cicero/connection_distance_distribution.pdf`|	Histogram of connection distances |
 |`plots/cicero/coaccess_score_distribution.pdf`|	Histogram of coaccess scores |
