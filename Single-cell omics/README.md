@@ -112,7 +112,7 @@ Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
 |`results/cicero/all_connections.csv`|	All detected peak-peak connections (raw) |
 |`results/cicero/significant_connections.csv`|	Filtered connections (coaccess ≥ 0.15) with genomic coordinates |
 |`results/cicero/gene_specific_connections.rds`|	Gene-targeted connection sets |
-|`results/cicero/connection_summary.csv`|	Statistics per target gene: - Connection count - Max coaccess score - Mean distance |
+|`results/cicero/connection_summary.csv`|	Statistics per target gene: + Connection count + Max coaccess score + Mean distance |
 |`results/cicero/cicero_results.rds`|	Complete analysis objects |
 |`plots/cicero/connection_distance_distribution.pdf`|	Histogram of connection distances |
 |`plots/cicero/coaccess_score_distribution.pdf`|	Histogram of coaccess scores |
