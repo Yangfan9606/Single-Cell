@@ -32,16 +32,62 @@ Process snRNA-seq data and perform cell annotation:
 
 Edit `1.snRNA.R` with your paths and sample name.
 
-Key operations:
+**Key operations:**
 - Quality control filtering
 - Normalization and dimensionality reduction
 - Cell clustering using Seurat
 - Cell type annotation with canonical markers
 
 **Outputs:**
-- `sample.snRNA_processed.rds` - Annotated Seurat object
-- `plots/snRNA_QC_before_filtering.pdf` - Pre-filtering QC metrics
-- `plots/snRNA_elbow_plot.pdf` - PCA elbow plot
-- `plots/snRNA_initial_clusters.pdf` - Initial clustering results
-- `plots/snRNA_marker_expression.pdf` - Marker gene expression
-- `plots/snRNA_annotated_celltypes.pdf` - Final annotated cell types
+- `sample.snRNA_processed.rds` : Annotated Seurat object
+- `plots/snRNA_QC_before_filtering.pdf` : Pre-filtering QC metrics
+- `plots/snRNA_elbow_plot.pdf` : PCA elbow plot
+- `plots/snRNA_initial_clusters.pdf` : Initial clustering results
+- `plots/snRNA_marker_expression.pdf` : Marker gene expression
+- `plots/snRNA_annotated_celltypes.pdf` : Final annotated cell types
+
+### Step 2: snATAC-seq Data Analysis
+Process snATAC-seq data
+
+Edit `2.snATAC.R` with your paths and sample name.
+
+**Key operations:**
+- Quality control filtering
+- Dimensionality reduction
+- Clustering and visualization
+
+**Outputs:**
+- `sample.snATAC_processed.rds` : Annotated Seurat object
+- `plots/snATAC_QC_metrics.pdf` : Violin plots of QC metrics
+- `plots/snATAC_LSI_depth_correlation.pdf` : Correlation plot between LSI components and sequencing depth
+- `plots/snATAC_initial_clusters.pdf` : UMAP visualization of initial cell clusters
+
+### Step 3: Integrated snRNA-seq and snATAC-seq Analysis
+Integrate both modalities:
+
+Edit `3.Integraged_snRNA_snATAC.R` with your paths and sample name.
+
+**Key operations:**
+- Gene activity calculation
+- Cross-modal integration
+- High-confidence cell filtering
+- Joint embedding creation
+
+**Outputs:**
+| File Path | Description |
+|-----------|-------------|
+| `plots/snATAC_prediction_scores.pdf` | Violin plots of prediction scores by cell type |
+| `plots/RNA_vs_ATAC_annotations.pdf` | Side-by-side UMAPs comparing RNA and ATAC annotations |
+| `plots/joint_embedding_by_dataset.pdf` | Joint UMAP split by dataset (RNA/ATAC) |
+| `plots/joint_embedding_by_celltype.pdf` | Joint UMAP colored by cell type |
+| `CTL.joint_integrated.rds` | Integrated Seurat object containing both modalities |
+> **Note**: The output sample name "CTL" can be modified by changing input file names and output object name in the script.
+
+### Step 4: Chromatin Co-Accessibility Analysis (Cicero)
+Identify long-range chromatin interactions:
+
+Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
+
+**Key operations:**
+
+**Outputs:**
