@@ -119,3 +119,34 @@ Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
 |`plots/cicero/coaccess_score_distribution.pdf`|	Histogram of coaccess scores |
 |`plots/cicero/connections_[GENE].pdf`|	Co-accessibility plots around target genes |
 |`results/cicero/analysis_report.txt`|	Summary report with key statistics |
+
+### Step 5: TF Motif Activity and ChromVAR Analysis
+Identify cell type-specific transcription factor activity:
+
+Edit `5.Integraged_chromVAR_Motif_activity.R` with your paths and sample name.
+
+**Key operations:**
+- Motif database processing:
+  - Retrieves JASPAR2024 CORE human motifs
+  - Filters motifs by information coefficient (IC ≥ 8):
+- Chromatin accessibility analysis
+- Cell-type specific TF activity
+- Differential TF activity
+- Target TF validation
+
+**Outputs:**
+| Category | File Path | Description |
+|----------|-----------|-------------|
+| Results | `results/motif/motif_mapping.csv` |	Filtered motifs with IC scores |
+| | `results/motif/average_tf_activity.csv` |	Mean TF activity per cell type |
+| | `results/motif/differential_TF_*.csv` |	Pairwise differential activity results |
+| | `results/motif/target_tf_analysis.rds` |	Detailed target TF analysis |
+| | `results/motif/tf_correlation_matrix.csv` |	TF co-activity network |
+| | `results/motif/atac_with_chromvar.rds` |	ChromVAR-enhanced Seurat object |
+| Visualizations | `plots/motif/tf_activity_heatmap.pdf` |	Top 50 variable TFs (z-scores) |
+| | `plots/motif/target_tf_violin_plots.pdf` |	Activity distribution for target TFs |
+| | `plots/motif/target_tf_umap_plots.pdf` |	Spatial activity patterns |
+| | `plots/motif/differential_tf_barplot_*.pdf` |	Top differential TFs per comparison |
+| | `plots/motif/tf_activity_boxplot_*.pdf` |	Cell-type specific activity for target TFs |
+| | `plots/motif/tf_correlation_heatmap.pdf` |	TF co-activity network |
+| | `plots/motif/tf_marker_validation.pdf` |	Known marker validation |
