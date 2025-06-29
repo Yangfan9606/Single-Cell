@@ -7,9 +7,9 @@ The pipeline consists of multiple scripts:
 - `run.sh` : **Data preprocessing** with Cell Ranger
 - `1.snRNA.R` : **snRNA-seq data processing** and cell annotation
 - `2.snATAC.R` : **snATAC-seq data processing**
-- `3.Integraged_snRNA_snATAC.R` : **Integrated analysis** of both modalities
-- `4.Integraged_Cicero_CoAccessibility.R` : **Chromatin co-accessibility analysis** with Cicero
-- `5.Integraged_chromVAR_Motif_activity.R` : **TF motif and ChromVAR analysis**
+- `3.Integrated_snRNA_snATAC.R` : **Integrated analysis** of both modalities
+- `4.Integrated_Cicero_CoAccessibility.R` : **Chromatin co-accessibility analysis** with Cicero
+- `5.Integrated_chromVAR_Motif_activity.R` : **TF motif and ChromVAR analysis**
 
 ## Prerequisites
 - 10x Genomics Cell Ranger
@@ -74,7 +74,7 @@ Edit `2.snATAC.R` with your paths and sample name.
 ### Step 3: Integrated snRNA-seq and snATAC-seq Analysis
 Integrate both modalities:
 
-Edit `3.Integraged_snRNA_snATAC.R` with your paths and sample name.
+Edit `3.Integrated_snRNA_snATAC.R` with your paths and sample name.
 
 **Key operations:**
 - Gene activity calculation
@@ -95,7 +95,7 @@ Edit `3.Integraged_snRNA_snATAC.R` with your paths and sample name.
 ### Step 4: Chromatin Co-Accessibility Analysis (Cicero)
 Identify long-range chromatin interactions:
 
-Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
+Edit `4.Integrated_Cicero_CoAccessibility.R` with your paths and sample name.
 
 **Key operations:**
 - Cicero Analysis：
@@ -123,7 +123,7 @@ Edit `4.Integraged_Cicero_CoAccessibility.R` with your paths and sample name.
 ### Step 5: TF Motif Activity and ChromVAR Analysis
 Identify cell type-specific transcription factor activity:
 
-Edit `5.Integraged_chromVAR_Motif_activity.R` with your paths and sample name.
+Edit `5.Integrated_chromVAR_Motif_activity.R` with your paths and sample name.
 
 **Key operations:**
 - Motif database processing:
