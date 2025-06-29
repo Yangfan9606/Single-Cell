@@ -1,0 +1,48 @@
+=== Cicero Co-accessibility Analysis Report ===
+Analysis Date: 2025-06-27 21:24:54
+Input File: CTL.joint_integrated.rds
+
+Data Summary:
+- Total cells: 1956
+- Total peaks analyzed: 12146
+- Sampling number: 200
+
+Connection Results:
+- Total connections found: 86162
+- Significant connections (>= 0.15): 55530
+- Mean connection distance: 170622 bp
+- Median connection distance: 156015 bp
+
+Gene-specific Analysis:
+- NRGN: 0 connections (max score: 0)
+- SLC17A7: 0 connections (max score: 0)
+- CAMK2A: 0 connections (max score: 0)
+- RBFOX3: 0 connections (max score: 0)
+- GAD1: 0 connections (max score: 0)
+- GAD2: 0 connections (max score: 0)
+- GPS2: 0 connections (max score: 0)
+- DHFR: 0 connections (max score: 0)
+- GFAP: 0 connections (max score: 0)
+- AQP4: 0 connections (max score: 0)
+- ALDH1L1: 0 connections (max score: 0)
+- MBP: 0 connections (max score: 0)
+- MOG: 0 connections (max score: 0)
+- PLP1: 0 connections (max score: 0)
+- VCAN: 0 connections (max score: 0)
+- PDGFRA: 0 connections (max score: 0)
+- SOX10: 0 connections (max score: 0)
+- CSPG4: 0 connections (max score: 0)
+- CSF1R: 0 connections (max score: 0)
+- CD74: 0 connections (max score: 0)
+- AIF1: 0 connections (max score: 0)
+- P2RY12: 0 connections (max score: 0)
+- TMEM119: 0 connections (max score: 0)
+- CD34: 0 connections (max score: 0)
+- PECAM1: 0 connections (max score: 0)
+- PDGFRB: 0 connections (max score: 0)
+
+Output Files:
+- All connections: results/cicero/all_connections.csv
+- Significant connections: results/cicero/significant_connections.csv
+- Gene-specific connections: results/cicero/gene_specific_connections.rds
+- Connection plots: plots/cicero/
