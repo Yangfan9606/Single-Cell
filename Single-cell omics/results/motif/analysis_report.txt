@@ -1,0 +1,45 @@
+=== Motif and ChromVAR Analysis Report ===
+Analysis Date: 2025-06-29 13:58:59
+Input File: CTL.joint_integrated.rds
+
+Data Summary:
+- Total cells analyzed: 6119
+- Cell types: Oligodendrocytes, Inhibitory_Neurons, Microglia, Astrocytes, OPC, Excitatory_Neurons
+- Total motifs from JASPAR: 720
+- High-quality motifs used: 689
+
+ChromVAR Results:
+- Motif activity scores calculated for 689 motifs
+- Variable motifs identified: 200
+
+Differential Analysis:
+- Oligodendrocytes_vs_Inhibitory_Neurons: 27 significantly different TFs
+- Oligodendrocytes_vs_Microglia: 286 significantly different TFs
+- Oligodendrocytes_vs_Astrocytes: 332 significantly different TFs
+- Oligodendrocytes_vs_OPC: 191 significantly different TFs
+- Oligodendrocytes_vs_Excitatory_Neurons: 84 significantly different TFs
+- Inhibitory_Neurons_vs_Microglia: 146 significantly different TFs
+- Inhibitory_Neurons_vs_Astrocytes: 170 significantly different TFs
+- Inhibitory_Neurons_vs_OPC: 30 significantly different TFs
+- Inhibitory_Neurons_vs_Excitatory_Neurons: 6 significantly different TFs
+- Microglia_vs_Astrocytes: 276 significantly different TFs
+- Microglia_vs_OPC: 193 significantly different TFs
+- Microglia_vs_Excitatory_Neurons: 108 significantly different TFs
+- Astrocytes_vs_OPC: 198 significantly different TFs
+- Astrocytes_vs_Excitatory_Neurons: 125 significantly different TFs
+- OPC_vs_Excitatory_Neurons: 59 significantly different TFs
+
+Target TF Analysis:
+- SOX10 (SOX10): analyzed
+- SOX9 (SOX9): analyzed
+- OLIG2 (OLIG2): analyzed
+- MEF2C (MEF2C): analyzed
+- FOXO1 (FOXO1::FLI1): analyzed
+
+Output Files:
+- Motif mapping: results/motif/motif_mapping.csv
+- Average TF activity: results/motif/average_tf_activity.csv
+- Differential results: results/motif/differential_TF_*.csv
+- Target TF analysis: results/motif/target_tf_analysis.rds
+- ChromVAR object: data/motif/atac_with_chromvar.rds
+- Visualization plots: plots/motif/
