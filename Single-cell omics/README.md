@@ -9,6 +9,7 @@ The pipeline consists of multiple scripts:
 - `2.snATAC.R` : **snATAC-seq data processing**
 - `3.Integraged_snRNA_snATAC.R` : **Integrated analysis** of both modalities
 - `4.Integraged_Cicero_CoAccessibility.R` : **Chromatin co-accessibility analysis** with Cicero
+- `5.Integraged_chromVAR_Motif_activity.R` : **TF motif and ChromVAR analysis**
 
 ## Prerequisites
 - 10x Genomics Cell Ranger
