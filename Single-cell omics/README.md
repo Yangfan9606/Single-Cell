@@ -150,3 +150,49 @@ Edit `5.Integrated_chromVAR_Motif_activity.R` with your paths and sample name.
 | | `plots/motif/tf_activity_boxplot_*.pdf` |	Cell-type specific activity for target TFs |
 | | `plots/motif/tf_correlation_heatmap.pdf` |	TF co-activity network |
 | | `plots/motif/tf_marker_validation.pdf` |	Known marker validation |
+
+### Step 6: DAR and DEG Analysis
+Perform differential accessibility (DAR) and differential expression (DEG) analysis:
+
+Edit `6.Integrated_DAR_DEG_analysis.R` with your paths and sample name.
+> **Note**: Replace <comparison> with comparison names (e.g., Astrocytes_vs_Oligodendrocytes) and <direction> with up or down for enrichment results.
+
+**Key operations:**
+- DAR analysis:
+  - Identifies differential accessibility regions (peaks) between cell types
+  - Applies LR test with latent variable correction (`nCount_ATAC`, `nFeature_ATAC`)
+- DEG analysis:
+  - Identifies differential expression genes between cell types
+  - Uses Wilcoxon rank-sum test
+- Visualization:
+  - Volcano plots, MA plots, and histograms for DARs/DEGs
+  - Summary bar plots of significant features per comparison
+- GO/KEGG analysis for DEGs (up/down-regulated)
+- DAR-DEG integration:
+  - Annotates DAR peaks to nearest genes
+  - Correlates chromatin accessibility with gene expression
+  - Identifies genes with both accessibility and expression changes
+- Cell-type specificity:
+  - Gene frequency analysis across comparisons
+  - Overlap statistics between DAR/DEG results
+ 
+**Outputs:**
+| Category | File Path | Description |
+|----------|-----------|-------------|
+| Results | `results/dar_deg/DAR_all_<comparison>.csv` |	Full DAR results per comparison |
+| | `results/dar_deg/DAR_significant_<comparison>.csv` |	Significant DARs (FDR < 0.05) |
+| | `results/dar_deg/DAR_summary.csv` |	Summary statistics for DAR analysis |
+| | `results/dar_deg/DEG_all_<comparison>.csv` |	Full DEG results per comparison |
+| | `results/dar_deg/DEG_significant_<comparison>.csv` |	Significant DEGs (FDR < 0.05) |
+| | `results/dar_deg/DAR_DEG_association_<comparison>.csv` |	Genes with correlated DAR/DEG changes |
+| | `results/dar_deg/gene_frequency_summary.csv` |	Gene occurrence frequency across comparisons |
+| | `results/dar_deg/GO_enrichment_<comparison>_<direction>.csv` |	GO enrichment for DEGs (up/down) |
+| | `results/dar_deg/KEGG_enrichment_<comparison>_<direction>.csv` |	KEGG enrichment for DEGs (up/down) |
+| Visualizations | `plots/dar_deg/DAR_volcano_<comparison>.pdf` |	Volcano plot of DAR results |
+| | `plots/dar_deg/DAR_MA_<comparison>.pdf` |	MA plot of accessibility vs. fold-change |
+| | `plots/dar_deg/DAR_distribution_<comparison>.pdf` |	Histogram of significant DAR logFC |
+| | `plots/dar_deg/DEG_volcano_<comparison>.pdf` |	Volcano plot of DEG results (gene labels) |
+| | `plots/dar_deg/DAR_summary_counts.pdf` |	Bar plot of significant DAR counts per comparison |
+| | `plots/dar_deg/DAR_DEG_association_<comparison>.pdf` |	Scatter plot: DAR vs. DEG logFC + peak annotations |
+| | `plots/dar_deg/GO_enrichment_<comparison>_<direction>.pdf` |	Dot plot of GO enrichment |
+| | `plots/dar_deg/gene_frequency_comprehensive_analysis.pdf` |	Combined gene frequency analysis plots |
