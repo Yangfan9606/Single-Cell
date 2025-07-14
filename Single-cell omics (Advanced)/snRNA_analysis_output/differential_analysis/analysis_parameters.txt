@@ -1,0 +1,10 @@
+Analysis Date: 2025-07-08
+Project Name: AD_vs_CTL_snRNA
+Input File: snRNA_analysis_output/cell_annotation/AD_vs_CTL_snRNA_annotated.rds
+Minimum cells per group: 10
+Log2FC threshold: 0.25
+Statistical test: wilcox
+P-value adjustment: BH
+Valid cell types: Astrocytes, Excitatory_Neurons, Inhibitory_Neurons, Microglia, Oligodendrocyte_precursor, Oligodendrocytes
+Total DEGs identified: 6838
+Significant DEGs (FDR<0.05): 3625
