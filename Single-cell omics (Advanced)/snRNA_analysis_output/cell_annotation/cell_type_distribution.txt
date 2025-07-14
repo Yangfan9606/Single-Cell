@@ -1,0 +1,7 @@
+AD	CTL
+Astrocytes	462	387
+Excitatory_Neurons	1559	1752
+Inhibitory_Neurons	335	119
+Microglia	369	136
+Oligodendrocyte_precursor	434	1126
+Oligodendrocytes	11	16
