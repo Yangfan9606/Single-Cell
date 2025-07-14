@@ -35,7 +35,7 @@ Edit `1.scRNA.process.R` with your paths and sample name.
 - PCA dimensionality reduction (1-30 principal components)
 - Louvain clustering (resolution 0.5)
 
-**Outputs:** **snRNA_analysis_output/**
+**Outputs:** -**snRNA_analysis_output/**-
 | File Path | Description |
 |-----------|-------------|
 | `AD_vs_CTL_snRNA_integrated.rds` | Integrated Seurat object |
@@ -132,24 +132,25 @@ Edit `7.scRNA_only_DEG.R` with your paths and sample name.
 
 **Outputs:** **snRNA_analysis_output/differential_analysis/**
 | File Path | Description |
-### figures/
+|-----------|-------------|
+| ### figures/ | |
 | `cell_counts_barplot.pdf` | Bar plot of cell counts by cell type and group |
 | `DEG_summary_barplot.pdf` | Bar plot of upregulated and downregulated DEGs per cell type |
 | `volcano_plot_[celltype].png` | Volcano plot for each cell type showing log2 fold change vs. adjusted p-value |
 | `GO_enrichment_[celltype].png` | Dot plot of GO enrichment results for each cell type |
 | `DEG_heatmap.pdf` and `top50_DEG_heatmap.png` | Heatmaps of average expression for the top 50 DEGs |
-### tables/
+| ### tables/ | |
 | `DEG_[celltype].txt` | DGE results for each cell type |
 | `GO_enrichment_[celltype].txt` | GO enrichment results for each cell |
-### source_data/
+| ### source_data/| |
 | `cell_counts_per_group.txt` | Cell counts by cell type and group |
 | `DEG_summary.txt` | Summary of DEGs (total, upregulated, downregulated, significant) |
 | `volcano_data_[celltype].txt` | Data used for volcano plots |
 | `heatmap_data.txt` | Data used for heatmaps |
-### Reports:
+| ### Reports: | |
 | `Differential_Analysis_Report.xlsx` | Excel file with parameters, analysis summary, DEG summary, and cell counts |
 | `analysis_parameters.txt` | Text file summarizing key analysis parameters and results |
-|-----------|-------------|
+
 
 ### Step 8: Trajectory (scRNA only)
 Pseudotime trajectory analysis on scRNA-seq data using the Monocle3 package:
