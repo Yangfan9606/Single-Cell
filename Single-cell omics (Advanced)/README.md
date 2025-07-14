@@ -35,7 +35,7 @@ Edit `1.scRNA.process.R` with your paths and sample name.
 - PCA dimensionality reduction (1-30 principal components)
 - Louvain clustering (resolution 0.5)
 
-**Outputs:** -**snRNA_analysis_output/**-
+**Outputs:** `**snRNA_analysis_output/**`
 | File Path | Description |
 |-----------|-------------|
 | `AD_vs_CTL_snRNA_integrated.rds` | Integrated Seurat object |
@@ -71,7 +71,7 @@ Edit `2.scATAC.process.R` with your paths and sample name.
     - Gene activity score calculation
     - Detailed annotation visualization (genomic distribution, TSS distance, etc.)
 
-**Outputs:** **snATAC_analysis_output/**
+**Outputs:** `**snATAC_analysis_output/**`
 | File Path | Description |
 |-----------|-------------|
 | `integration_results/integrated_snatac_object.rds` | Integrated ATAC Seurat object |
@@ -100,7 +100,7 @@ Edit `5.scRNA_only_Cell_Annotation.R` with your paths and sample name.
   - Voting system: integrating the results of multiple annotation methods
   - Priority strategy: manual annotation takes precedence over automatic annotation
 
-**Outputs:** **cell_annotation/**
+**Outputs:** `**cell_annotation/**`
 | File Path | Description |
 |-----------|-------------|
 | `AD_vs_CTL_snRNA_annotated.rds`| Annotated Seurat object |
@@ -133,21 +133,21 @@ Edit `7.scRNA_only_DEG.R` with your paths and sample name.
 **Outputs:** **snRNA_analysis_output/differential_analysis/**
 | File Path | Description |
 |-----------|-------------|
-| ### figures/ | |
+| **figures/** | |
 | `cell_counts_barplot.pdf` | Bar plot of cell counts by cell type and group |
 | `DEG_summary_barplot.pdf` | Bar plot of upregulated and downregulated DEGs per cell type |
 | `volcano_plot_[celltype].png` | Volcano plot for each cell type showing log2 fold change vs. adjusted p-value |
 | `GO_enrichment_[celltype].png` | Dot plot of GO enrichment results for each cell type |
 | `DEG_heatmap.pdf` and `top50_DEG_heatmap.png` | Heatmaps of average expression for the top 50 DEGs |
-| ### tables/ | |
+| **tables/** | |
 | `DEG_[celltype].txt` | DGE results for each cell type |
 | `GO_enrichment_[celltype].txt` | GO enrichment results for each cell |
-| ### source_data/| |
+| **source_data/** | |
 | `cell_counts_per_group.txt` | Cell counts by cell type and group |
 | `DEG_summary.txt` | Summary of DEGs (total, upregulated, downregulated, significant) |
 | `volcano_data_[celltype].txt` | Data used for volcano plots |
 | `heatmap_data.txt` | Data used for heatmaps |
-| ### Reports: | |
+| **Reports:** | |
 | `Differential_Analysis_Report.xlsx` | Excel file with parameters, analysis summary, DEG summary, and cell counts |
 | `analysis_parameters.txt` | Text file summarizing key analysis parameters and results |
 
@@ -168,19 +168,19 @@ Edit `8.scRNA_only_Trajectory.R` with your paths and sample name.
 **Outputs:** **snRNA_analysis_output/trajectory_analysis/**
 | File Path | Description |
 |-----------|-------------|
-### Saved Objects:
+| **Saved Objects** | |
 | `[project_name]_trajectory_cds.rds` | Monocle3 CDS object (commented out) |
 | `[project_name]_trajectory_summary.rds` | Summary of trajectory analysis (commented out) |
-### plots/
+| **plots/** | |
 | `trajectory_by_celltype.pdf` | Trajectory plot colored by cell type |
 | `trajectory_by_partition.pdf` | Trajectory plot colored by partition |
 | `trajectory_by_pseudotime.pdf` | Trajectory plot colored by pseudotime |
 | `trajectory_by_pseudotime_grouped.pdf` | Trajectory plot by pseudotime, faceted by group |
 | `trajectory_genes_expression.png` | Heatmap of expression for top 50 trajectory-associated genes |
-### data_export/
+| **data_export/** | |
 | `pseudotime_data.txt` | Cell-level pseudotime, cell type, group, cluster, and partition information |
 | `trajectory_genes.txt` | Significant trajectory-associated genes with Moran's I test results |
-### Reports:
+| **Reports:** | |
 | `trajectory_analysis_report.xlsx` | Excel file with analysis parameters, cell type distribution, and trajectory summary |
 
 ### Step 9: Trajectory (scRNA + scATAC)
