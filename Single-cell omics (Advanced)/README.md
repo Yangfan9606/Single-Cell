@@ -100,7 +100,7 @@ Edit `5.scRNA_only_Cell_Annotation.R` with your paths and sample name.
   - Voting system: integrating the results of multiple annotation methods
   - Priority strategy: manual annotation takes precedence over automatic annotation
 
-**Outputs:** `**cell_annotation/**`
+**Outputs:** `snRNA_analysis_output/├──cell_annotation/`
 | File Path | Description |
 |-----------|-------------|
 | `AD_vs_CTL_snRNA_annotated.rds`| Annotated Seurat object |
@@ -130,7 +130,7 @@ Edit `7.scRNA_only_DEG.R` with your paths and sample name.
 - Visualization
 - Functional Enrichment
 
-**Outputs:** **snRNA_analysis_output/differential_analysis/**
+**Outputs:** `snRNA_analysis_output/├──differential_analysis/`
 | File Path | Description |
 |-----------|-------------|
 | **figures/** | |
@@ -165,22 +165,22 @@ Edit `8.scRNA_only_Trajectory.R` with your paths and sample name.
 - Visualization
 - Gene Identification: Identifies genes significantly associated with the trajectory using Moran's I test
 
-**Outputs:** **snRNA_analysis_output/trajectory_analysis/**
+**Outputs:** `snRNA_analysis_output/├──trajectory_analysis/`
 | File Path | Description |
 |-----------|-------------|
-| **Saved Objects** | |
+| ├──**Saved Objects** | |
 | `[project_name]_trajectory_cds.rds` | Monocle3 CDS object (commented out) |
 | `[project_name]_trajectory_summary.rds` | Summary of trajectory analysis (commented out) |
-| **plots/** | |
+| ├──**plots/** | |
 | `trajectory_by_celltype.pdf` | Trajectory plot colored by cell type |
 | `trajectory_by_partition.pdf` | Trajectory plot colored by partition |
 | `trajectory_by_pseudotime.pdf` | Trajectory plot colored by pseudotime |
 | `trajectory_by_pseudotime_grouped.pdf` | Trajectory plot by pseudotime, faceted by group |
 | `trajectory_genes_expression.png` | Heatmap of expression for top 50 trajectory-associated genes |
-| **data_export/** | |
+| ├──**data_export/** | |
 | `pseudotime_data.txt` | Cell-level pseudotime, cell type, group, cluster, and partition information |
 | `trajectory_genes.txt` | Significant trajectory-associated genes with Moran's I test results |
-| **Reports:** | |
+| ├──**Reports:** | |
 | `trajectory_analysis_report.xlsx` | Excel file with analysis parameters, cell type distribution, and trajectory summary |
 
 ### Step 9: Trajectory (scRNA + scATAC)
