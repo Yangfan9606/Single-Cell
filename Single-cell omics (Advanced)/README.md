@@ -132,7 +132,6 @@ Edit `7.scRNA_only_DEG.R` with your paths and sample name.
 
 **Outputs:** **snRNA_analysis_output/differential_analysis/**
 | File Path | Description |
-|-----------|-------------|
 ### figures/
 | `cell_counts_barplot.pdf` | Bar plot of cell counts by cell type and group |
 | `DEG_summary_barplot.pdf` | Bar plot of upregulated and downregulated DEGs per cell type |
@@ -150,6 +149,7 @@ Edit `7.scRNA_only_DEG.R` with your paths and sample name.
 ### Reports:
 | `Differential_Analysis_Report.xlsx` | Excel file with parameters, analysis summary, DEG summary, and cell counts |
 | `analysis_parameters.txt` | Text file summarizing key analysis parameters and results |
+|-----------|-------------|
 
 ### Step 8: Trajectory (scRNA only)
 Pseudotime trajectory analysis on scRNA-seq data using the Monocle3 package:
