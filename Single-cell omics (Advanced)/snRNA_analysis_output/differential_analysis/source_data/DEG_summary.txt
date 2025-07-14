@@ -1,0 +1,7 @@
+CellType	Total_DEGs	Upregulated	Downregulated	Significant_DEGs
+Astrocytes	1031	73	585	658
+Excitatory_Neurons	1076	415	486	901
+Inhibitory_Neurons	1036	51	274	325
+Microglia	1095	116	323	439
+Oligodendrocyte_precursor	1565	564	738	1302
+Oligodendrocytes	1035	0	0	0
