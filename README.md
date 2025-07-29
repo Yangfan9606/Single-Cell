@@ -9,3 +9,6 @@ Scripts for integrated analysis of single-nucleus RNA-seq (snRNA-seq) and single
 
 ## Single-cell omics (Advanced)
 Advanced scripts for single-cell omics
+
+## Cell_tpye_predictor
+Single-Cell RNA-seq Cell Type Classification
